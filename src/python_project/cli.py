@@ -13,5 +13,5 @@ def main() -> None:
     print(f"Hello, {args.name}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
