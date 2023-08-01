@@ -3,24 +3,19 @@
 from __future__ import absolute_import
 from __future__ import print_function
 
-import io
-import re
 from glob import glob
 from os.path import basename
 from os.path import dirname
 from os.path import join
 from os.path import splitext
+from pathlib import Path
 
 from setuptools import find_packages
 from setuptools import setup
 
 
-def read(*names, **kwargs):
-    with io.open(
-        join(dirname(__file__), *names),
-        encoding=kwargs.get('encoding', 'utf8')
-    ) as fh:
-        return fh.read()
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 
 setup(
@@ -28,9 +23,9 @@ setup(
     version='0.0.1',
     license='MIT',
     description='An example package. Generated with cookiecutter-pylibrary.',
-    long_description='Long description for your python-project',
+    long_description=long_description,
     author='Redmar van den Berg',
-    author_email='Redmar@ubuntu.com',
+    author_email='RedmarvandenBerg@lumc.nl',
     url='https://github.com/redmar-van-den-berg/python-project',
     packages=find_packages('src'),
     package_dir={'': 'src'},
@@ -57,7 +52,7 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        'Changelog': 'https://github.com/redmar-van-den-berg/python-project/blob/master/CHANGELOG.rst',
+        'Changelog': 'https://github.com/redmar-van-den-berg/python-project/blob/master/CHANGELOG.md',
         'Issue Tracker': 'https://github.com/redmar-van-den-berg/python-project/issues',
     },
     keywords=[
