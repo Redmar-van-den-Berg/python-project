@@ -3,7 +3,7 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 
 # Python project
-
 ------------------------------------------------------------------------
+
 ## Documentation
-Write the documetnation for python-project here
+The documentation is available on [python-project.readthedocs.io](python-project.readthedocs.io).
