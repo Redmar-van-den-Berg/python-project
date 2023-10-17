@@ -52,7 +52,7 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        'Changelog': 'https://github.com/redmar-van-den-berg/python-project/blob/master/CHANGELOG.md',
+        'Changelog': 'https://github.com/redmar-van-den-berg/python-project/blob/master/CHANGELOG.rst',
         'Issue Tracker': 'https://github.com/redmar-van-den-berg/python-project/issues',
     },
     keywords=[
