@@ -4,7 +4,7 @@ Welcome to the documentation for Python-project!
 Describe your project here.
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to :ref:`install<installation>` the project.
 
 .. note::
 
@@ -17,3 +17,4 @@ Contents
 
    usage
    api
+   changelog
